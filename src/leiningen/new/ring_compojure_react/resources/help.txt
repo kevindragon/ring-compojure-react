@@ -1,0 +1,12 @@
+lein [with-profile dev|test|prod] run [command] [params]
+java -jar path/to/watch.jar [command] [params]
+
+command:
+  migrate:make params    create two migration sql files with params, up and down
+  migrate                execute up migration
+  rollback               execute down migration
+  help                   print this help info
+
+
+use the command below to package a standard alone jar file
+lein with-profile dev|test|prod uberjar

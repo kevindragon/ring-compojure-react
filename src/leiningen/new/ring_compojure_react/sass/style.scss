@@ -1,0 +1,44 @@
+$lineColor: #dedede;
+$bgGray: #efefef;
+$gap10: 10px;
+$gap20: 20px;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  .nav {
+    flex: 0 100px;
+    line-height: 1.5em;
+    padding: $gap10;
+    background-color: $bgGray;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        ul.sub {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .playground {
+    flex: 1;
+    margin-left: $gap20;
+  }
+}
